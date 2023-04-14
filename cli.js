@@ -1,5 +1,4 @@
-#!/usr/bin/env bash
-":" //# comment; exec /usr/bin/env node --input-type=module - "$@" < "$0"
+#!/usr/bin/env node --input-type=module - "$@" < "$0"
 
 import { readFile, writeFile } from 'fs/promises';
 import openapi from 'openapi-typescript';

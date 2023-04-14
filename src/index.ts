@@ -51,7 +51,7 @@ export function getPathName(anyPath: string) {
  */
  export interface Options {
     /**
-     * Base URL of the Revolt node
+     * Base URL
      */
     baseURL: string;
     /**
@@ -60,6 +60,7 @@ export function getPathName(anyPath: string) {
     authentication: {
         rauth?: string | undefined;
         revolt?: { token: string } | string | undefined;
+        bearer?: string | undefined;
     };
 }
 
@@ -101,6 +102,14 @@ export class API {
                         headers: {
                             'X-Session-Token': this.authentication.revolt.token
                         }
+                    }
+                }
+            }
+        } else if (this.authentication.bearer) {
+            if (typeof this.authentication.bearer === 'string') {
+                return {
+                    headers: {
+                        'Authorization': `Bearer ${this.authentication.bearer}`
                     }
                 }
             }
