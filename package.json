@@ -1,10 +1,10 @@
 {
     "name": "@spacebarchat/oapi",
-    "version": "0.1.19",
+    "version": "0.1.21",
     "description": "API Library Generator for OpenAPI",
     "main": "dist/index.js",
     "type": "module",
-    "repository": "https://github.com/insertish/oapi",
+    "repository": "https://github.com/spacebarchat/oapi",
     "author": "Paul Makles <insrt.uk>",
     "license": "MIT",
     "dependencies": {

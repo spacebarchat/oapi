@@ -20,7 +20,7 @@ readFile('OpenAPI.json')
         const spec = JSON.parse(source);
 
         // Copy index.ts
-        readFile(resolve(cwd(), 'node_modules', '@insertish', 'oapi', 'src', 'index.ts'))
+        readFile(resolve(cwd(), 'node_modules', '@spacebarchat', 'oapi', 'src', 'index.ts'))
             .then(data => writeFile('src/index.ts', data));
 
         // Generate Schema
