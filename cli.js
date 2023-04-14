@@ -1,4 +1,4 @@
-#!/usr/bin/env node --input-type=module - "$@" < "$0"
+#!/usr/bin/env node
 
 import { readFile, writeFile } from 'fs/promises';
 import openapi from 'openapi-typescript';

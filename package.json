@@ -3,6 +3,7 @@
   "version": "0.1.18",
   "description": "API Library Generator for OpenAPI",
   "main": "dist/index.js",
+  "type": "module",
   "repository": "https://github.com/insertish/oapi",
   "author": "Paul Makles <insrt.uk>",
   "license": "MIT",
