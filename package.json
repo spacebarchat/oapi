@@ -1,5 +1,5 @@
 {
-    "name": "@spacebarchat/oapi",
+    "name": "@spacebar/oapi",
     "version": "0.1.19",
     "description": "API Library Generator for OpenAPI",
     "main": "dist/index.js",
